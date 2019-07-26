@@ -1,0 +1,58 @@
+<!--Harry Potter Theme-->
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="UTF-8">
+    <!--link to bootstrap-->
+    <!--css-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--link to google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat+Alternates|Nothing+You+Could+Do&display=swap"
+        rel="stylesheet">
+
+    <!--link to css-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <title>Trivia Game</title>
+</head>
+
+<body>
+    <!--trivia area-->
+    <main class="container">
+        <div class="row title">
+            <div class="col-md-offset-1 col-md-12">
+                <br>
+                <h3>Are You a Muggle?</h3>
+            </div>
+        </div>
+        <!--timer-->
+        <div class="row timer">
+            <div class="col-md-offset-1 col-md-12">
+                <div id="time-left"></div>
+            </div>
+        </div>
+        <!--questions-->
+        <div class="row trivia-area">
+            <div class="col-md-offset-1 col-md-12">
+                <!--questions go here-->
+                <div id="questions-here"></div>
+            </div>
+        </div>
+        <!--submit button-->
+        <div class="row trivia-area">
+            <div class="col-md-offset-1 col-md-12">
+                <br>
+                <button class="btn btn-primary btn-lg btn-block">Done!</button>
+                <br>
+            </div>
+        </div>
+    </main>
+    <!--link to javascript-->
+    <script src="assets/javascript/app.js"></script>
+    <!--jQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</body>
+
+</html>
