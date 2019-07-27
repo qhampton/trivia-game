@@ -1,6 +1,6 @@
 /*background*/
 body{
-    background-image: url(../images/hp-background-3.jpg);
+    background-image: url(../images/hp-background-2.jpg);
     background-repeat: repeat;
     background-position: center;
     background-attachment: fixed;
@@ -13,7 +13,7 @@ body{
     margin: 50px auto 0px;
     height: auto;
     width: 600px;
-    background-color: papayawhip;
+    background-color: rgba(255, 239, 213, 0.884);
     text-align: center;
 }
 

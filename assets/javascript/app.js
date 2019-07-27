@@ -35,10 +35,10 @@ var quizQuestions = [
     answer:"1998",
     }];
 console.log(quizQuestions);
+
 //time variables- 5 minutes
 var number = 300;
 var gameTime;
-//time variables to call within button clicks
 //counts down in seconds from 300 and displas the time
 function countDown(){
     number--;
@@ -62,8 +62,13 @@ $("#startGame").click(function(){
     //countdown timer runs on click
     start();
     //displays questions from list above
-    // $.each(quizQuestions, function(question, choice) {
-    // $("#questions-here").prepend(quizQuestions)});
+    for (var i=0; i < quizQuestions.length; i++){
+    $("#questions-here").append("<h3>" + quizQuestions[i].question + "</h3>");
+        for (var j=0; j < quizQuestions[i].choices.length; j++){
+        $("#questions-here").append("<input type='radio' name='question- "+i+"' value='"+quizQuestions[i].choices[j]+"'>"+quizQuestions[i].choices[j]+"<br>");
+    }
+    $("#questions-here").append("<br>");
+    }
         //object array of 8 questions *only one answer per question
     //submit button displays on the bottom
     var quizEnd = $("<button/>",
