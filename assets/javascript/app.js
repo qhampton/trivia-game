@@ -4,7 +4,11 @@ $(document).ready(function () {
     var gameTime;
     var correct = 0;
     var incorrect = 0;
-
+//submit button
+$(document).on("click","#finished", function(){
+    gameDone();
+    stop();
+    });
 $("#startGame").click(function () {
     //hide start button
     $("#startGame").hide();
@@ -19,6 +23,7 @@ $("#startGame").click(function () {
         }
         $("#questions-here").append("<br>");
         }
+        $("#questions-here").append("<button type='button' class='btn btn-primary btn-lg btn-block'  id='finished'>Finite!</button>");
 });
 
 function gameDone(){
@@ -37,11 +42,11 @@ function result(){
     $("#time-left").html("<h2>Times Up!</h2>");
         $("#questions-here").html("<h3> Correct answers: " + correct);
         $("#questions-here").append("<h3> Incorrect answers: " + incorrect);
-        if(correct > 6){
-            $("#mainPic").attr("<img>", assets/images/you-win.gif);
+        if(correct >= 6){
+            $("#mainPic").attr("src", "assets/images/you-win.gif");
         }
         else{
-            $("#mainPic").attr("<img>", assets/images/you-lose.gif);
+            $("#mainPic").attr("src", "assets/images/you-lose.gif");
         }
 }
 function start() {
