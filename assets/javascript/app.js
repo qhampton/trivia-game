@@ -36,52 +36,46 @@ var game = {
     incorrect: 0,
 
     //calculates the correct and incorrect answers 
-    done:function () {
-        $.each($("input [name= 'question-0':checked"), function () {
+    done: function () {
+        $.each($("input [name= 'question-0']:checked"), function () {
             if ($(this).val() == question[0].answer) {
                 game.correct++;
-            } 
-            else {
+            } else {
                 game.incorrect++;
             }
         });
-        $.each($("input [name= 'question-1':checked"), function () {
+        $.each($("input [name= 'question-1']:checked"), function () {
             if ($(this).val() == question[1].answer) {
                 game.correct++;
-            } 
-            else {
+            } else {
                 game.incorrect++;
             }
         });
-        $.each($("input [name= 'question-2':checked"), function () {
+        $.each($("input [name= 'question-2']:checked"), function () {
             if ($(this).val() == question[2].answer) {
-            game.correct++;
-            } 
-            else {
-            game.incorrect++;
+                game.correct++;
+            } else {
+                game.incorrect++;
             }
-        }); 
-        $.each($("input [name= 'question-3':checked"), function () {
+        });
+        $.each($("input [name= 'question-3']:checked"), function () {
             if ($(this).val() == question[3].answer) {
                 game.correct++;
-            } 
-            else {
+            } else {
                 game.incorrect++;
             }
         });
-        $.each($("input [name= 'question-4':checked"), function () {
+        $.each($("input [name= 'question-4']:checked"), function () {
             if ($(this).val() == question[4].answer) {
                 game.correct++;
-            } 
-            else {
+            } else {
                 game.incorrect++;
             }
         });
-        $.each($("input [name= 'question-5':checked"), function () {
+        $.each($("input [name= 'question-5']:checked"), function () {
             if ($(this).val() == question[5].answer) {
                 game.correct++;
-            } 
-            else {
+            } else {
                 game.incorrect++;
             }
         });
@@ -91,7 +85,6 @@ var game = {
     },
     //prints score to page
     result:function(){
-        $("#time-left").remove();
         $("#time-left").html("<h2>Times Up!</h2>");
         $("#questions-here").append("<h3> Correct answers: " + this.correct);
         $("#questions-here").append("<h3> Correct answers: " + this.incorrect);
