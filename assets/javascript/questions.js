@@ -2,7 +2,7 @@
     var questions = [{
             question: "What is Harry Potter's first pet?",
             choices: ["cat", "toad", "owl", "rat"],
-            answer: "Owl"
+            answer: "owl"
         },
         {
             question: "How can a house elf be freed?",
