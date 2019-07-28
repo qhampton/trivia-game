@@ -79,15 +79,16 @@ var game = {
                 game.incorrect++;
             }
         });
-        console.log(game.incorrect + " incorrect");
         console.log(game.correct + " correct");
+        console.log(game.incorrect + " incorrect");
         game.result();
     },
     //prints score to page
     result:function(){
+        stop();
         $("#time-left").html("<h2>Times Up!</h2>");
-        $("#questions-here").append("<h3> Correct answers: " + this.correct);
-        $("#questions-here").append("<h3> Correct answers: " + this.incorrect);
+        $("#questions-here").html("<h3> Correct answers: " + this.correct);
+        $("#questions-here").append("<h3> Incorrect answers: " + this.incorrect);
         // if(this.correct > 6){
         //     $("#mainPic").attr("<img>", assets/images/you-win.gif);
         // }
@@ -111,7 +112,7 @@ $("#startGame").click(function () {
     for (var i = 0; i < questions.length; i++) {
         $("#questions-here").append("<h3>" + questions[i].question + "</h3>");
         for (var j = 0; j < questions[i].choices.length; j++) {
-            $("#questions-here").append("<input type='radio' name='question- " + i + "' value='" + questions[i].choices[j] + "'>" + questions[i].choices[j] + "<br>");
+            $("#questions-here").append("<input type='radio' name='question-" + i + "' value='" + questions[i].choices[j] + "'>" + questions[i].choices[j] + "<br>");
         }
         $("#questions-here").append("<br>");
         }
