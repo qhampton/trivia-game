@@ -1,6 +1,6 @@
 //start page
 $(document).ready(function () {
-    var number = 15;
+    var number = 30;
     var gameTime;
     var correct = 0;
     var incorrect = 0;
@@ -12,7 +12,6 @@ $(document).on("click","#finished", function(){
 $("#startGame").click(function () {
     //hide start button
     $("#startGame").hide();
-    $("#mainPic").hide();
     //countdown timer runs on click
     start();
     //displays questions from other file
@@ -36,18 +35,20 @@ function gameDone(){
         
         }
     }
+    if(correct >= 4){
+        $("#mainPic").html("<img src = 'assets/images/you-win.gif'>");
+        $("#title").html("<h1>Yer a wizard!</h1>");
+    }
+    else{
+        $("#mainPic").html("<img src = 'assets/images/muggle.gif'>");
+        $("#title").html("<h1>No magic here- that's ok, nothing wrong with a squib.</h1>");
+    }
 }
 
 function result(){
-    $("#time-left").html("<h2>Times Up!</h2>");
-        $("#questions-here").html("<h3> Correct answers: " + correct);
-        $("#questions-here").append("<h3> Incorrect answers: " + incorrect);
-        if(correct >= 6){
-            $("#mainPic").attr("src", "assets/images/you-win.gif");
-        }
-        else{
-            $("#mainPic").attr("src", "assets/images/you-lose.gif");
-        }
+    $("#time-left").html("<h2>Your Score</h2>");
+    $("#questions-here").html("<h3> Correct answers: " + correct);
+    $("#questions-here").append("<h3> Incorrect answers: " + incorrect);
 }
 function start() {
     gameTime = setInterval(countDown, 1000);
