@@ -1,5 +1,5 @@
 # trivia-game
-HW- 5: JavaScript Assignment 2
+<h3>HW- 5: JavaScript Assignment 2</h3>
 
 Are you a Muggle?
 
@@ -24,12 +24,12 @@ You have 30 seconds - Good Luck!
   
   -In your images folder, save whatever images you'd like to use in this exercise.
 
-Game Specs
+<h3>Game Specs</h3>
 
-The player will have a limited amount of time to finish the quiz. 
+-The player will have a limited amount of time to finish the quiz.
+  -Don't forget to include a countdown timer.
 
-The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
+- Don't let the player pick more than one answer per question.
 
-Don't let the player pick more than one answer per question.
+-The game ends when the time runs out. The page will reveal the number of questions that players answer correctly and incorrectly.
 
-Don't forget to include a countdown timer.
