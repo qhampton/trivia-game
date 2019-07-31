@@ -7,7 +7,7 @@ Test to see if you're ready to go to Hogwarts with this 6 question quiz.
 
 You have 30 seconds - Good Luck!
 
-Set up your folders and files
+<bold>Set up your folders and files</bold>
 
 -Create a GitHub repo called TriviaGame, then clone the repo to your computer.
 
