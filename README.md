@@ -18,16 +18,16 @@ You have 30 seconds - Good Luck!
 -Create a folder inside of the TriviaGame folder called assets.
 
 -Inside assets, create three folders: css, javascript, images
-  *In your css folder, create a style.css file.
+  * In your css folder, create a style.css file.
   
-  *In your javascript folder, create an app.js file; here you'll write all of your JavaScript and jQuery.
+  * In your javascript folder, create an app.js file; here you'll write all of your JavaScript and jQuery.
   
-  *In your images folder, save whatever images you'd like to use in this exercise.
+  * In your images folder, save whatever images you'd like to use in this exercise.
 
 <h3>Game Specs</h3>
 
 -The player will have a limited amount of time to finish the quiz.
-  *Don't forget to include a countdown timer.
+  * Don't forget to include a countdown timer.
 
 - Don't let the player pick more than one answer per question.
 
